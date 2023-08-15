@@ -394,11 +394,16 @@
         </div>
       </div>
     </footer>
-
     <!-- modal window -->
-
     <div class="backdrop-window is-hidden" data-modal>
-      <div class="modal-window"></div>
+      <div class="modal-window">
+        <button class="modal-window-btn" type="button" data-modal-close>
+          <svg class="modal-window-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
