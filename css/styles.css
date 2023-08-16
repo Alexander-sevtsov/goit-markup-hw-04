@@ -121,6 +121,7 @@ ol {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav__link:hover,
@@ -582,9 +583,15 @@ ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window-icon:hover,
-.modal-window-icon:focus {
+.modal-window-btn:hover .modal-window-icon,
+.modal-window-btn:focus .modal-window-icon {
   fill: #ffffff;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* end modal window */
